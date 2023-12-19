@@ -1,5 +1,4 @@
-NOTICE
-============================================================
+## NOTICE
 
 ⚠️ This project have minor fixes for personal usage. ⚠️
 
@@ -8,8 +7,8 @@ https://github.com/python-sdbus/python-sdbus-networkmanager
 
 Official page of python-networkmanager: https://github.com/seveas/python-networkmanager
 
-python-networkmanager Easy communication with NetworkManager
-============================================================
+# python-networkmanager-legacy
+*Easy communication with NetworkManager*
 
 python-networkmanager wraps NetworkManagers D-Bus interface so you can be less
 verbose when talking to NetworkManager from python. All interfaces have been
@@ -19,26 +18,38 @@ calls are forwarded to the correct interface.
 See docs/index.rst for the documentation. An HTML version can be found on
 http://packages.python.org/python-networkmanager/
 
-Requirements
-============
-Python 2.5 or newer (Python 3 is supported as well) and the python D-Bus
-bindings.
+### Requirements
 
-Quick install instructions
-==========================
+Python 3.6 or newer and the python D-Bus bindings.
+
+### Quick install instructions
 
 Stable version:
-
-$ pip install python-networkmanager
+```
+$ pip install python-networkmanager-legacy
+```
 
 Latest code:
-
-$ git clone http://github.com/seveas/python-networkmanager
-$ cd python-networkmanager
+```
+$ git clone https://github.com/kt315ua/python-networkmanager-legacy
+$ cd python-networkmanager-legacy
 $ python setup.py install
+```
 
-Build python wheel-package
-==========================
-$ sudo apt install build-essential libpython3-dev libdbus-1-dev libglib2.0-dev
+### Build and install python wheel-package
+
+#### Build
+```
+$ sudo apt install build-essential libpython3-dev libdbus-1-dev libglib2.0-dev`
 $ pip wheel .
-$ pip install python_networkmanager-2.2.1-py3-none-any.whl
+```
+
+#### Install
+```
+$ pip install python_networkmanager_legacy-2.2.1-py3-none-any.whl
+```
+
+⚠️ WARNINGS ⚠️
+
+Package conflicts with 'python-networkmanager':
+- NetworkManager.py file will be overwritten
