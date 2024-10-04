@@ -1,7 +1,7 @@
 # This workflows will upload a Python Package using Twine when a release is created
 # For more information see: https://help.github.com/en/actions/language-and-framework-guides/using-python-with-github-actions#publishing-to-package-registries
 
-name: Publish Python 🐍 distribution 📦 to TestPyPI
+name: Test Publish Python 🐍 distribution 📦 to TestPyPI
 
 on: push
 
@@ -76,3 +76,4 @@ jobs:
       with:
         repository-url: https://test.pypi.org/legacy/
         password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        verbose: true
