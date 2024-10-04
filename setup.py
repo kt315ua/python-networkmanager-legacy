@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name="python-networkmanager-legacy",
-      version="2.2.1",
+      version="2.2.2dev1",
       author="Serhii Horelskyi",
       url="https://github.com/kt315ua/python-networkmanager-legacy",
       description="Easy communication with NetworkManager",
